@@ -1,0 +1,108 @@
+:root {
+  --nitro-blue: #5bacc3;
+  --nitro-pink: #fff0ed;
+  --graphite: #393939;
+  --lightgray: #f7f7f7;
+}
+
+p {
+  color: var(--graphite);
+}
+
+li {
+  list-style-type: none;
+}
+
+/* header */
+
+header > nav {
+  background-color: var(--nitro-pink);
+}
+
+header > div {
+  background-color: var(--nitro-pink);
+}
+
+header > nav > h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--graphite);
+}
+
+.hero h1 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.hero img {
+  width: 16rem;
+}
+
+.hero button {
+  color: white;
+  font-size: 1rem;
+  background-color: var(--nitro-blue);
+  border: none;
+}
+
+/* main */
+
+#our-products h2 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.product-card > h3 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--graphite);
+}
+
+.product-price {
+  font-weight: 500;
+  font-size: 2rem;
+  color: var(--nitro-blue);
+}
+
+#our-products > button {
+  font-size: 1rem;
+  background-color: var(--nitro-blue);
+  border: none;
+  color: white;
+}
+
+#discount {
+  background-color: var(--graphite);
+  text-align: center;
+}
+
+#discount > p {
+  margin-top: 0;
+  color: white;
+  font-size: 3rem;
+}
+
+#discount > p > span {
+  font-weight: 800;
+}
+
+/* footer */
+
+footer {
+  background-color: var(--nitro-pink);
+  font-size: 1rem;
+  color: var(--graphite);
+}
+
+footer h3 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.hours > p > span {
+  font-weight: 800;
+}
+
+.socials > img {
+  width: 3rem;
+}

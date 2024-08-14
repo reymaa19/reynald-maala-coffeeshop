@@ -11,8 +11,8 @@ li {
 
 /* header */
 
-header h3 {
-  font-weight: normal;
+header h2 {
+  font-weight: 400;
   font-size: 2rem;
   color: var(--graphite);
 }
@@ -42,7 +42,7 @@ main > nav {
 }
 
 main > nav a {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: white;
   text-decoration: none;
 }
@@ -63,8 +63,8 @@ main > section h2 {
 }
 
 main > section h3 {
-  font-weight: 400;
-  font-size: 1.5rem;
+  font-weight: 300;
+  font-size: 2rem;
 }
 
 .product-description {
@@ -74,4 +74,6 @@ main > section h3 {
 
 .product-price {
   color: var(--nitro-blue);
+  font-weight: 600;
+  font-size: 1rem;
 }
