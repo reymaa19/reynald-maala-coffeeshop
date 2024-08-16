@@ -5,63 +5,9 @@
   --lightgray: #f7f7f7;
 }
 
-body {
-  margin: 0;
-}
-
-/* nav */
-
-.nav {
-  background-color: var(--nitro-pink);
-  padding: 1.7rem;
-}
-
-/* .nav__logo-link {
-  margin-left: 1.5rem;
-} */
-
-.nav__logo {
-  width: 4.2rem;
-  margin-bottom: -0.5rem;
-}
-
-.nav__title {
-  font-weight: 300;
-  font-size: 4.2rem;
-  color: var(--graphite);
-  margin: 0;
-}
-
-.nav__title,
-.nav__list,
-.nav__list-item {
-  display: inline-block;
-}
-
-.nav__list {
-  padding-left: 2.5rem;
-  margin: 0;
-}
-
-.nav__list-item {
-  margin-right: 2.5rem;
-  list-style-type: none;
-}
-
-.nav__link {
-  text-decoration: none;
-  color: var(--graphite);
-  font-size: 1.7rem;
-  font-weight: 600;
-}
-
-.nav__link--highlighted {
-  color: var(--nitro-blue);
-}
-
 /* header */
 
-.header__title {
+.hero__title {
   font-weight: 200;
   font-size: 5rem;
   text-align: center;
@@ -72,63 +18,63 @@ body {
   margin: 0 auto;
 }
 
-.header__hero {
+.hero__background {
   background-image: url('../assets/images/coffee-circle.jpg');
   background-size: cover;
   background-position: center;
   height: 50rem;
 }
 
-/* header__nav */
+/* hero */
 
-.header__nav {
+.hero__nav {
   background-color: var(--graphite);
   text-align: center;
 }
 
-.header__nav-list {
+.hero__list {
   margin: 0;
 }
 
-.header__nav-list-item {
+.hero__item {
   display: inline-block;
   border-left: 5px solid var(--nitro-blue);
   padding-left: 1.6rem;
   margin: 1.5rem 0.7rem;
 }
 
-.header__nav-link {
+.hero__link {
   font-size: 1.8rem;
   color: white;
   text-decoration: none;
 }
 
-/* section */
+/* main */
 
-.section {
+.main__card {
   color: var(--graphite);
   text-align: center;
   background-color: var(--nitro-pink);
   padding: 2rem 0;
 }
 
-#cold-drinks {
+.main__card--lightgray-background {
   background-color: var(--lightgray);
 }
 
-.section__title {
+.main__category {
   font-weight: 300;
   font-size: 5rem;
   margin: 0 0 4rem 0;
 }
 
-.section__item-title {
+.main__title {
   font-weight: 300;
   font-size: 2.7rem;
   margin: 2rem 0 0 0;
 }
 
-.section__item-description {
+.main__description {
   font-size: 1.5rem;
   font-weight: 500;
   font-style: italic;
@@ -136,7 +82,7 @@ body {
   margin: 0 auto;
 }
 
-.section__item-price {
+.main__price {
   color: var(--nitro-blue);
   font-weight: 600;
   font-size: 1.5rem;

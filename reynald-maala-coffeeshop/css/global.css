@@ -1,4 +1,58 @@
+:root {
+  --nitro-blue: #5bacc3;
+  --nitro-pink: #fff0ed;
+  --graphite: #393939;
+  --lightgray: #f7f7f7;
+}
+
 body {
   font-family: 'Open Sans';
   font-weight: 400;
+  margin: 0;
+}
+
+/* header */
+
+.header {
+  background-color: var(--nitro-pink);
+  padding: 1.7rem;
+}
+
+.header__logo {
+  width: 4.2rem;
+  margin-bottom: -0.5rem;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 4.2rem;
+  color: var(--graphite);
+  margin: 0;
+}
+
+.header__title,
+.header__list,
+.header__item {
+  display: inline-block;
+}
+
+.header__list {
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin: 0;
+}
+
+.header__item {
+  margin-right: 2.5rem;
+}
+
+.header__link {
+  text-decoration: none;
+  color: var(--graphite);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.header__link--highlighted {
+  color: var(--nitro-blue);
 }

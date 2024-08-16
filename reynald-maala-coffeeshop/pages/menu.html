@@ -13,125 +13,135 @@
   </head>
 
   <body>
-    <!-- nav -->
-    <nav class="nav">
-      <a href="../index.html" class="nav__logo-link">
-        <img
-          src="../assets/logos/coffee-beans-logo-and-footer.svg"
-          alt="coffee bean logo"
-          class="nav__logo"
-        /><!-- 
-        ASK ABOUT THIS:
-          Why is there a space when after a new line in the html code?
-        --><h2 class="nav__title">nitro</h2></a
-      >
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="../index.html" class="nav__link">ABOUT</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="./menu.html" class="nav__link">MENU</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="./menu.html" class="nav__link nav__link--highlighted"
-            >SHOP NOW</a
-          >
-        </li>
-      </ul>
-    </nav>
-
     <!-- header -->
     <header class="header">
-      <div class="header__hero">
-        <h1 class="header__title">MENU</h1>
-      </div>
-
-      <!-- header nav -->
+      <!-- hero nav -->
       <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-list-item">
-            <a href="#hot-drinks" class="header__nav-link">HOT DRINKS</a>
+        <a href="../index.html" class="header__logo-link">
+          <img
+            src="../assets/logos/coffee-beans-logo-and-footer.svg"
+            alt="coffee bean logo"
+            class="header__logo"
+          /><!-- 
+        ASK ABOUT THIS:
+          Why is there a space when after a new line in the html code?
+          How do you remove whitespace?
+        -->
+          <h2 class="header__title">nitro</h2></a
+        >
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="../index.html" class="header__link">ABOUT</a>
           </li>
-          <li class="header__nav-list-item">
-            <a href="#cold-drinks" class="header__nav-link">COLD DRINKS</a>
+          <li class="header__item">
+            <a href="./menu.html" class="header__link">MENU</a>
           </li>
-          <li class="header__nav-list-item">
-            <a href="#pastries" class="header__nav-link">PASTRIES</a>
+          <li class="header__item">
+            <a href="./menu.html" class="header__link header__link--highlighted"
+              >SHOP NOW</a
+            >
           </li>
         </ul>
       </nav>
     </header>
 
+    <!-- hero -->
+    <section class="hero">
+      <div class="hero__background">
+        <h1 class="hero__title">MENU</h1>
+      </div>
+      <!-- hero nav -->
+      <nav class="hero__nav">
+        <ul class="hero__list">
+          <li class="hero__item">
+            <a href="#hot-drinks" class="hero__link">HOT DRINKS</a>
+          </li>
+          <li class="hero__item">
+            <a href="#cold-drinks" class="hero__link">COLD DRINKS</a>
+          </li>
+          <li class="hero__item">
+            <a href="#pastries" class="hero__link">PASTRIES</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
     <!-- main -->
     <main class="main">
-      <section id="hot-drinks" class="section">
-        <h2 class="section__title">Hot Drinks</h2>
+      <!-- main card -->
+      <section id="hot-drinks" class="main__card">
+        <h2 class="main__category">Hot Drinks</h2>
 
-        <div class="section__item">
-          <h3 class="section__item-title">In-house Brew</h3>
-          <p class="section__item-description">
+        <div class="main__item">
+          <h3 class="main__title">In-house Brew</h3>
+          <p class="main__description">
             Our in-house medium roast is a classic balance between sweet
             vanilla, nutty hazelnut, and a smooth low acidity to bring
             everything together.
           </p>
-          <p class="section__item-price">$2.99</p>
+          <p class="main__price">$2.99</p>
         </div>
 
-        <div class="section__item">
-          <h3 class="section__item-title">Espresso</h3>
-          <p class="section__item-description">
+        <div class="main__item">
+          <h3 class="main__title">Espresso</h3>
+          <p class="main__description">
             A balance between bold and smooth, powerful and sweet, our signature
             espresso blend is a complex flavor profile. It features strong notes
             of semi-sweet chocolate and caramel, with mild acidity and a bright
             floral finish.
           </p>
-          <p class="section__item-price">$4.99</p>
+          <p class="main__price">$4.99</p>
         </div>
       </section>
 
-      <section id="cold-drinks" class="section">
-        <h2 class="section__title">Cold Drinks</h2>
+      <!-- main card -->
+      <section
+        id="cold-drinks"
+        class="main__card main__card--lightgray-background"
+      >
+        <h2 class="main__category">Cold Drinks</h2>
 
-        <div class="section__item">
-          <h3 class="section__item-title">Cold Brew</h3>
-          <p class="section__item-description">
+        <div class="main__item">
+          <h3 class="main__title">Cold Brew</h3>
+          <p class="main__description">
             Our bright and delicious coffee blend, brewed over ice to give you a
             cold coffee freshness with all the flavor of our amazing in-house
             coffee.
           </p>
-          <p class="section__item-price">$3.99</p>
+          <p class="main__price">$3.99</p>
         </div>
 
-        <div class="section__item">
-          <h3 class="section__item-title">Iced Chai Latte</h3>
-          <p class="section__item-description">
+        <div class="main__item">
+          <h3 class="main__title">Iced Chai Latte</h3>
+          <p class="main__description">
             A creamy drink with a kick, this drink features spicy chai tea
             blended with your choice of milk and poured over ice.
           </p>
-          <p class="section__item-price">$6.99</p>
+          <p class="main__price">$6.99</p>
         </div>
       </section>
 
-      <section id="pastries" class="section">
-        <h2 class="section__title">Pastries</h2>
+      <!-- main card -->
+      <section id="pastries" class="main__card">
+        <h2 class="main__category">Pastries</h2>
 
-        <div class="section__item">
-          <h3 class="section__item-title">Bacon Oatmeal Raisin Cookie</h3>
-          <p class="section__item-description">
+        <div class="main__item">
+          <h3 class="main__title">Bacon Oatmeal Raisin Cookie</h3>
+          <p class="main__description">
             An infused bacon, sugar and egg mixture is folded into a perfect
             blend of oats, flour, raisins and cinnamon to create a soft and
             chewy textured cookie.
           </p>
-          <p class="section__item-price">$3.50</p>
+          <p class="main__price">$3.50</p>
         </div>
 
-        <div class="section__item">
-          <h3 class="section__item-title">Blueberry, Lemon and Thyme Muffin</h3>
-          <p class="section__item-description">
+        <div class="main__item">
+          <h3 class="main__title">Blueberry, Lemon and Thyme Muffin</h3>
+          <p class="main__description">
             Tart and sweet, this classic blueberry and lemon combination comes
             with an earthy twist.
           </p>
-          <p class="section__item-price">$2.50</p>
+          <p class="main__price">$2.50</p>
         </div>
       </section>
     </main>

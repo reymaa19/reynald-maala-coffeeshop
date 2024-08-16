@@ -5,104 +5,129 @@
   --lightgray: #f7f7f7;
 }
 
-p {
-  color: var(--graphite);
-}
+/* hero */
 
-li {
-  list-style-type: none;
-}
-
-/* header */
-
-header > nav {
+.hero {
   background-color: var(--nitro-pink);
 }
 
-header > div {
-  background-color: var(--nitro-pink);
-}
-
-header > nav > h2 {
-  font-weight: 400;
-  font-size: 2rem;
-  color: var(--graphite);
-}
-
-.hero h1 {
+.hero__title {
+  font-size: 5rem;
   font-weight: 300;
-  font-size: 3rem;
+  margin: 3rem 0;
 }
 
-.hero img {
-  width: 20%;
+.hero__description {
+  font-size: 1.5rem;
 }
 
-.hero button {
-  color: white;
-  font-size: 1rem;
-  background-color: var(--nitro-blue);
-  border: none;
+.hero__image {
+  height: 67vh;
+  margin-left: 15.5rem;
+}
+
+.main__button:hover {
+  cursor: pointer;
 }
 
 /* main */
 
-#our-products h2 {
+.main__title {
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
-.product-card > h3 {
-  font-weight: 400;
-  font-size: 2rem;
-  color: var(--graphite);
-}
-
-.product-price {
-  font-weight: 500;
-  font-size: 2rem;
-  color: var(--nitro-blue);
-}
-
-#our-products > button {
-  font-size: 1rem;
+.main__button {
+  display: block;
   background-color: var(--nitro-blue);
-  border: none;
   color: white;
+  padding: 1.25rem 3rem;
+  border: none;
+  font-size: 1.8rem;
 }
 
-#discount {
+.main__button--hero {
+  margin-top: -3rem;
+}
+
+/* products-gallery */
+
+.products-gallery {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0;
+}
+
+/* product */
+
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 21rem;
+  height: 31rem;
+  padding: 3rem;
+  margin: 3rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.313rem 0.563rem -0.063rem rgba(0, 0, 0, 0.25);
+}
+
+.product__image {
+  align-self: center;
+  height: 19rem;
+}
+
+.product__title {
+  align-self: center;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+.product__price {
+  align-self: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--nitro-blue);
+  margin: 0;
+}
+
+/* discount */
+
+.discount {
+  width: 80vw;
   background-color: var(--graphite);
+  color: white;
   text-align: center;
 }
 
-#discount > p {
-  margin-top: 0;
-  color: white;
-  font-size: 3rem;
+.discount__description {
+  margin: 0;
+  font-size: 3.5rem;
+  font-weight: 400;
 }
 
-#discount > p > span {
-  font-weight: 800;
+.discount__code {
+  font-weight: 700;
 }
 
 /* footer */
 
-footer {
+.footer {
   background-color: var(--nitro-pink);
-  font-size: 1rem;
-  color: var(--graphite);
 }
 
-footer h3 {
-  font-weight: 400;
-  font-size: 2rem;
+.footer__title {
+  font-size: 3rem;
+  font-weight: 300;
 }
 
-.hours > p > span {
-  font-weight: 800;
+.footer__detail {
+  font-size: 1.5rem;
 }
 
-.socials img {
-  width: 3rem;
+.footer__detail--bold {
+  font-weight: 600;
+}
+
+.footer__icon {
+  width: 4rem;
 }

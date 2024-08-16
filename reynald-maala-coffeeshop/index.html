@@ -13,80 +13,145 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="./index.html">
+    <!-- header -->
+    <header class="header">
+      <!-- hero nav -->
+      <nav class="header__nav">
+        <a href="./index.html" class="header__logo-link">
           <img
             src="./assets/logos/coffee-beans-logo-and-footer.svg"
             alt="coffee bean logo"
-        /></a>
-
-        <h2>nitro</h2>
-        <ul>
-          <li><a href="./index.html">ABOUT</a></li>
-          <li><a href="./pages/menu.html">MENU</a></li>
-          <li><a href="./pages/menu.html">SHOP NOW</a></li>
+            class="header__logo"
+          />
+          <h2 class="header__title">nitro</h2></a
+        >
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="./index.html" class="header__link">ABOUT</a>
+          </li>
+          <li class="header__item">
+            <a href="./pages/menu.html" class="header__link">MENU</a>
+          </li>
+          <li class="header__item">
+            <a href="./menu.html" class="header__link header__link--highlighted"
+              >SHOP NOW</a
+            >
+          </li>
         </ul>
       </nav>
-
-      <div class="hero">
-        <h1>Nitro Coffee</h1>
-        <p>
-          Coffee is a brewed drink prepared from roasted coffee beans, the seeds
-          of berries from certain coffee species.
-        </p>
-        <button>SHOP NOW</button>
-        <img src="./assets/images/coffeebeans.png" alt="coffee bag" />
-      </div>
     </header>
 
-    <main>
-      <section id="our-products">
-        <h2>Our Products</h2>
-        <div class="product-card">
-          <img src="./assets/images/coffeebeans.png" alt="coffee beans" />
-          <h3>Coffee Beans</h3>
-          <p class="product-price">$18.99</p>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/coldbrew.png" alt="cold brew" />
-          <h3>Cold Brew</h3>
-          <p class="product-price">$4.99</p>
-        </div>
-        <div class="product-card">
-          <img src="./assets/images/inhousebrew.png" alt="in-house brew" />
-          <h3>In-house brew</h3>
-          <p class="product-price">$2.99</p>
-        </div>
-        <button>VIEW ALL</button>
+    <!-- main -->
+    <main class="main">
+      <!-- hero -->
+      <section class="hero">
+        <h1 class="hero__title">Nitro Coffee</h1>
+        <p class="hero__description">
+          Coffee is a brewed drink prepared from roasted coffee beans, the seeds
+          of berries from certain Coffee species.
+        </p>
+        <img
+          src="./assets/images/coffeebeans-hero.png"
+          alt=""
+          class="hero__image"
+        />
+        <button
+          class="main__button main__button--hero"
+          onclick="window.location.href='./pages/menu.html'"
+        >
+          SHOP NOW
+        </button>
       </section>
 
-      <section id="discount">
-        <p>Get 20% off your first order with code <span>FirstNitro</span></p>
+      <h2 class="main__title">Our Products</h2>
+
+      <!-- products-gallery -->
+      <section class="products-gallery">
+        <!-- product -->
+        <div class="product">
+          <img
+            src="./assets/images/coffeebeans.png"
+            alt="coffee beans"
+            class="product__image"
+          />
+          <h3 class="product__title">Coffee Beans</h3>
+          <p class="product__price">$18.99</p>
+        </div>
+        <div class="product">
+          <img
+            src="./assets/images/coldbrew.png"
+            alt="cold brew"
+            class="product__image"
+          />
+          <h3 class="product__title">Cold Brew</h3>
+          <p class="product__price">$4.99</p>
+        </div>
+        <div class="product">
+          <img
+            src="./assets/images/inhousebrew.png"
+            alt="in-house brew"
+            class="product__image"
+          />
+          <h3 class="product__title">In-house brew</h3>
+          <p class="product__price">$2.99</p>
+        </div>
+      </section>
+
+      <button class="main__button">VIEW ALL</button>
+
+      <!-- discount -->
+      <section class="discount">
+        <p class="discount__description">
+          Get 20% off your first order with code
+          <span class="discount__code">FirstNitro</span>
+        </p>
       </section>
     </main>
 
-    <footer>
-      <div class="address">
-        <h3>Address</h3>
-        <p>503 Broadway Penthouse</p>
-        <p>New York</p>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__category">
+        <h3 class="footer__title">Address</h3>
+        <p class="footer__detail">503 Broadway Penthouse</p>
+        <p class="footer__detail">New York</p>
       </div>
-      <div class="hours">
-        <h3>Hours</h3>
-        <p><span>Monday - Friday:</span> 9am - 7pm</p>
-        <p><span>Saturday - Sunday:</span> 10am - 5pm</p>
+      <div class="footer__category">
+        <h3 class="footer__title">Hours</h3>
+        <p class="footer__detail">
+          <span class="footer__detail footer__detail--bold"
+            >Monday - Friday:</span
+          >
+          9am - 7pm
+        </p>
+        <p class="footer__detail">
+          <span class="footer__detail footer__detail--bold"
+            >Saturday - Sunday:</span
+          >
+          10am - 5pm
+        </p>
       </div>
-      <div class="socials">
-        <h3>Social</h3>
-        <a href="https://www.facebook.com/" target="_blank"
-          ><img src="./assets/images/Facebook-Icon.svg" alt="facebook"
+      <div class="footer__category">
+        <h3 class="footer__title">Social</h3>
+        <a href="https://www.facebook.com/" target="_blank" class="footer__link"
+          ><img
+            src="./assets/images/Facebook-Icon.svg"
+            alt="facebook"
+            class="footer__icon"
         /></a>
-        <a href="https://www.yelp.com/" target="_blank"
-          ><img src="./assets/images/Yelp-Icon.svg" alt="yelp"
+        <a href="https://www.yelp.com/" target="_blank" class="footer__link"
+          ><img
+            src="./assets/images/Yelp-Icon.svg"
+            alt="yelp"
+            class="footer__icon"
         /></a>
-        <a href="https://www.instagram.com/" target="_blank"
-          ><img src="./assets/images/Instagram-Icon.svg" alt="instagram"
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          class="footer__link"
+          ><img
+            src="./assets/images/Instagram-Icon.svg"
+            alt="instagram"
+            class="footer__icon"
         /></a>
       </div>
     </footer>
