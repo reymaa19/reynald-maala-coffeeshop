@@ -13,105 +13,125 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="../index.html">
-          <img
-            src="../assets/logos/coffee-beans-logo-and-footer.svg"
-            alt="coffee bean logo"
-        /></a>
+    <!-- nav -->
+    <nav class="nav">
+      <a href="../index.html" class="nav__logo-link">
+        <img
+          src="../assets/logos/coffee-beans-logo-and-footer.svg"
+          alt="coffee bean logo"
+          class="nav__logo"
+        /><!-- 
+        ASK ABOUT THIS:
+          Why is there a space when after a new line in the html code?
+        --><h2 class="nav__title">nitro</h2></a
+      >
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="../index.html" class="nav__link">ABOUT</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="./menu.html" class="nav__link">MENU</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="./menu.html" class="nav__link nav__link--highlighted"
+            >SHOP NOW</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-        <h2>nitro</h2>
+    <!-- header -->
+    <header class="header">
+      <div class="header__hero">
+        <h1 class="header__title">MENU</h1>
+      </div>
 
-        <ul>
-          <li><a href="../index.html">ABOUT</a></li>
-          <li><a href="./menu.html">MENU</a></li>
-          <li><a href="./menu.html">SHOP NOW</a></li>
+      <!-- header nav -->
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-list-item">
+            <a href="#hot-drinks" class="header__nav-link">HOT DRINKS</a>
+          </li>
+          <li class="header__nav-list-item">
+            <a href="#cold-drinks" class="header__nav-link">COLD DRINKS</a>
+          </li>
+          <li class="header__nav-list-item">
+            <a href="#pastries" class="header__nav-link">PASTRIES</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <div class="hero">
-        <h1>MENU</h1>
-      </div>
+    <!-- main -->
+    <main class="main">
+      <section id="hot-drinks" class="section">
+        <h2 class="section__title">Hot Drinks</h2>
 
-      <nav>
-        <ul>
-          <li><a href="#hot-drinks">Hot Drinks</a></li>
-          <li><a href="#cold-drinks">Cold Drinks</a></li>
-          <li><a href="#pastries">Pastries</a></li>
-        </ul>
-      </nav>
-
-      <section id="hot-drinks">
-        <h2>Hot Drinks</h2>
-
-        <div>
-          <h3>In-house Brew</h3>
-          <p class="product-description">
+        <div class="section__item">
+          <h3 class="section__item-title">In-house Brew</h3>
+          <p class="section__item-description">
             Our in-house medium roast is a classic balance between sweet
             vanilla, nutty hazelnut, and a smooth low acidity to bring
             everything together.
           </p>
-          <p class="product-price">$2.99</p>
+          <p class="section__item-price">$2.99</p>
         </div>
 
-        <div>
-          <h3>Espresso</h3>
-          <p class="product-description">
+        <div class="section__item">
+          <h3 class="section__item-title">Espresso</h3>
+          <p class="section__item-description">
             A balance between bold and smooth, powerful and sweet, our signature
             espresso blend is a complex flavor profile. It features strong notes
             of semi-sweet chocolate and caramel, with mild acidity and a bright
             floral finish.
           </p>
-          <p class="product-price">$4.99</p>
+          <p class="section__item-price">$4.99</p>
         </div>
       </section>
 
-      <section id="cold-drinks">
-        <h2>Cold Drinks</h2>
+      <section id="cold-drinks" class="section">
+        <h2 class="section__title">Cold Drinks</h2>
 
-        <div>
-          <h3>Cold Brew</h3>
-          <p class="product-description">
+        <div class="section__item">
+          <h3 class="section__item-title">Cold Brew</h3>
+          <p class="section__item-description">
             Our bright and delicious coffee blend, brewed over ice to give you a
             cold coffee freshness with all the flavor of our amazing in-house
             coffee.
           </p>
-          <p class="product-price">$3.99</p>
+          <p class="section__item-price">$3.99</p>
         </div>
 
-        <div>
-          <h3>Iced Chai Latte</h3>
-          <p class="product-description">
+        <div class="section__item">
+          <h3 class="section__item-title">Iced Chai Latte</h3>
+          <p class="section__item-description">
             A creamy drink with a kick, this drink features spicy chai tea
             blended with your choice of milk and poured over ice.
           </p>
-          <p class="product-price">$6.99</p>
+          <p class="section__item-price">$6.99</p>
         </div>
       </section>
 
-      <section id="pastries">
-        <h2>Pastries</h2>
+      <section id="pastries" class="section">
+        <h2 class="section__title">Pastries</h2>
 
-        <div>
-          <h3>Bacon Oatmeal Raisin Cookie</h3>
-          <p class="product-description">
+        <div class="section__item">
+          <h3 class="section__item-title">Bacon Oatmeal Raisin Cookie</h3>
+          <p class="section__item-description">
             An infused bacon, sugar and egg mixture is folded into a perfect
             blend of oats, flour, raisins and cinnamon to create a soft and
             chewy textured cookie.
           </p>
-          <p class="product-price">$3.50</p>
+          <p class="section__item-price">$3.50</p>
         </div>
 
-        <div>
-          <h3>Blueberry, Lemon and Thyme Muffin</h3>
-          <p class="product-description">
+        <div class="section__item">
+          <h3 class="section__item-title">Blueberry, Lemon and Thyme Muffin</h3>
+          <p class="section__item-description">
             Tart and sweet, this classic blueberry and lemon combination comes
             with an earthy twist.
           </p>
-          <p class="product-price">$2.50</p>
+          <p class="section__item-price">$2.50</p>
         </div>
       </section>
     </main>
