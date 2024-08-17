@@ -5,7 +5,7 @@
   --lightgray: #f7f7f7;
 }
 
-/* header */
+/* hero */
 
 .hero__title {
   font-weight: 200;
@@ -22,10 +22,8 @@
   background-image: url('../assets/images/coffee-circle.jpg');
   background-size: cover;
   background-position: center;
-  height: 50rem;
+  height: 70vh;
 }
-
-/* hero */
 
 .hero__nav {
   background-color: var(--graphite);
@@ -49,40 +47,40 @@
   text-decoration: none;
 }
 
-/* main */
+/* menu */
 
-.main__card {
+.menu__section {
   color: var(--graphite);
   text-align: center;
   background-color: var(--nitro-pink);
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
-.main__card--lightgray-background {
+.menu__section--lightgray-background {
   background-color: var(--lightgray);
 }
 
-.main__category {
+.menu__category {
   font-weight: 300;
   font-size: 5rem;
-  margin: 0 0 4rem 0;
+  margin: 0 0 3rem 0;
 }
 
-.main__title {
+.menu__title {
   font-weight: 300;
-  font-size: 2.7rem;
+  font-size: 2.8rem;
   margin: 2rem 0 0 0;
 }
 
-.main__description {
-  font-size: 1.5rem;
+.menu__description {
+  font-size: 1.45rem;
   font-weight: 500;
   font-style: italic;
   width: 33%;
   margin: 0 auto;
 }
 
-.main__price {
+.menu__price {
   color: var(--nitro-blue);
   font-weight: 600;
   font-size: 1.5rem;
