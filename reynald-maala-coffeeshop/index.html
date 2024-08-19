@@ -15,15 +15,15 @@
   <body>
     <!-- header -->
     <header class="header">
+      <a href="./index.html" class="header__logo-link">
+        <img
+          src="./assets/logos/coffee-beans-logo-and-footer.svg"
+          alt="coffee bean logo"
+          class="header__logo"
+        />
+        <h2 class="header__title">nitro</h2></a
+      >
       <nav class="header__nav">
-        <a href="./index.html" class="header__logo-link">
-          <img
-            src="./assets/logos/coffee-beans-logo-and-footer.svg"
-            alt="coffee bean logo"
-            class="header__logo"
-          />
-          <h2 class="header__title">nitro</h2></a
-        >
         <ul class="header__list">
           <li class="header__item">
             <a href="./index.html" class="header__link">ABOUT</a>
@@ -79,7 +79,7 @@
               alt="coffee beans"
               class="product__image"
             />
-            <div class="product__info">
+            <div class="product__details">
               <div class="product__content">
                 <h3 class="product__title">Coffee Beans</h3>
                 <p class="product__quantity">Pack of 3</p>
@@ -95,7 +95,7 @@
               alt="cold brew"
               class="product__image"
             />
-            <div class="product__info">
+            <div class="product__details">
               <div class="product__content">
                 <h3 class="product__title">Cold Brew</h3>
                 <p class="product__quantity">1 can</p>
@@ -111,7 +111,7 @@
               alt="in-house brew"
               class="product__image"
             />
-            <div class="product__info">
+            <div class="product__details">
               <div class="product__content">
                 <h3 class="product__title">In-house brew</h3>
                 <p class="product__quantity">1 cup</p>
@@ -128,6 +128,45 @@
         >
           VIEW ALL
         </button>
+      </section>
+
+      <!-- info -->
+      <section class="info">
+        <div class="info__details">
+          <h2 class="main__title">We're Different</h2>
+          <p class="info__description">
+            We grow and roast our own beans. Every bean, every cup, every step
+            of the way, we strive for excellence.
+          </p>
+          <div class="info__images">
+            <img
+              src="./assets/images/planting.svg"
+              alt=""
+              class="info__image"
+            /><img
+              src="./assets/images/coffee-beans.svg"
+              alt=""
+              class="info__image"
+            /><img
+              src="./assets/images/coffee-cup.svg"
+              alt=""
+              class="info__image"
+            />
+          </div>
+          <button
+            onclick="window.location.href='./index.html'"
+            class="main__button"
+          >
+            LEARN MORE
+          </button>
+        </div>
+        <div class="info__featured">
+          <img
+            src="./assets/images/tiltedcan.png"
+            alt=""
+            class="info__featured-image"
+          />
+        </div>
       </section>
 
       <!-- discount -->

@@ -7,22 +7,24 @@
 
 /* hero */
 
-.hero__title {
-  font-weight: 200;
-  font-size: 5rem;
-  text-align: center;
-  color: white;
-  width: 23rem;
-  height: 15rem;
-  background-color: var(--graphite);
-  margin: 0 auto;
-}
-
 .hero__background {
   background-image: url('../assets/images/coffee-circle.jpg');
   background-size: cover;
   background-position: center;
   height: 70vh;
+  align-content: center;
+}
+
+.hero__title {
+  font-weight: 200;
+  font-size: 5rem;
+  text-align: center;
+  align-content: center;
+  color: white;
+  width: 23rem;
+  height: 15rem;
+  background-color: var(--graphite);
+  margin: 0 auto;
 }
 
 .hero__nav {
