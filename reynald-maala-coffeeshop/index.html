@@ -13,7 +13,6 @@
   </head>
 
   <body>
-
     <!-- header -->
     <header class="header">
       <nav class="header__nav">
@@ -22,13 +21,17 @@
             src="./assets/logos/coffee-beans-logo-and-footer.svg"
             alt="coffee bean logo"
             class="header__logo"
-          /><h2 class="header__title">nitro</h2></a
-        ><ul class="header__list">
+          />
+          <h2 class="header__title">nitro</h2></a
+        >
+        <ul class="header__list">
           <li class="header__item">
             <a href="./index.html" class="header__link">ABOUT</a>
-          </li><li class="header__item">
+          </li>
+          <li class="header__item">
             <a href="./pages/menu.html" class="header__link">MENU</a>
-          </li><li class="header__item">
+          </li>
+          <li class="header__item">
             <a
               href="./pages/menu.html"
               class="header__link header__link--highlighted"
@@ -41,7 +44,6 @@
 
     <!-- main -->
     <main class="main">
-
       <!-- hero -->
       <section class="hero">
         <div class="hero__details-container">
@@ -70,7 +72,6 @@
 
         <!-- products-gallery -->
         <section class="products-gallery">
-
           <!-- product -->
           <div class="product">
             <img
@@ -78,8 +79,13 @@
               alt="coffee beans"
               class="product__image"
             />
-            <h3 class="product__title">Coffee Beans</h3>
-            <p class="product__price">$18.99</p>
+            <div class="product__info">
+              <div class="product__content">
+                <h3 class="product__title">Coffee Beans</h3>
+                <p class="product__quantity">Pack of 3</p>
+              </div>
+              <p class="product__price">$19</p>
+            </div>
           </div>
 
           <!-- product -->
@@ -89,8 +95,13 @@
               alt="cold brew"
               class="product__image"
             />
-            <h3 class="product__title">Cold Brew</h3>
-            <p class="product__price">$4.99</p>
+            <div class="product__info">
+              <div class="product__content">
+                <h3 class="product__title">Cold Brew</h3>
+                <p class="product__quantity">1 can</p>
+              </div>
+              <p class="product__price">$5</p>
+            </div>
           </div>
 
           <!-- product -->
@@ -100,14 +111,19 @@
               alt="in-house brew"
               class="product__image"
             />
-            <h3 class="product__title">In-house brew</h3>
-            <p class="product__price">$2.99</p>
+            <div class="product__info">
+              <div class="product__content">
+                <h3 class="product__title">In-house brew</h3>
+                <p class="product__quantity">1 cup</p>
+              </div>
+              <p class="product__price">$3</p>
+            </div>
           </div>
         </section>
 
         <!-- reused main button and added centered modifier -->
-        <button 
-          onclick="window.location.href='./pages/menu.html'" 
+        <button
+          onclick="window.location.href='./pages/menu.html'"
           class="main__button main__button--centered"
         >
           VIEW ALL
@@ -129,7 +145,8 @@
         <h3 class="footer__title">Address</h3>
         <p class="footer__detail">503 Broadway Penthouse</p>
         <p class="footer__detail">New York</p>
-      </div><div class="footer__category">
+      </div>
+      <div class="footer__category">
         <h3 class="footer__title">Hours</h3>
         <p class="footer__detail">
           <span class="footer__detail footer__detail--bold"
@@ -150,13 +167,13 @@
           ><img
             src="./assets/images/Facebook-Icon.svg"
             alt="facebook"
-            class="footer__icon"
-        /></a><a href="https://www.yelp.com/" target="_blank" class="footer__link"
+            class="footer__icon" /></a
+        ><a href="https://www.yelp.com/" target="_blank" class="footer__link"
           ><img
             src="./assets/images/Yelp-Icon.svg"
             alt="yelp"
-            class="footer__icon"
-        /></a><a
+            class="footer__icon" /></a
+        ><a
           href="https://www.instagram.com/"
           target="_blank"
           class="footer__link"
