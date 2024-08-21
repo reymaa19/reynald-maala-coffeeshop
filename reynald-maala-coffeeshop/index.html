@@ -52,16 +52,17 @@
             Coffee is a brewed drink prepared from roasted coffee beans, the
             seeds of berries from certain Coffee species.
           </p>
+
           <button
             class="main__button"
             onclick="window.location.href='./pages/menu.html'"
           >
-            SHOP NOW
+            <div class="main__button-box">SHOP NOW</div>
           </button>
         </div>
         <img
           src="./assets/images/coffeebeans-hero.png"
-          alt=""
+          alt="coffee beans hero"
           class="hero__image"
         />
       </section>
@@ -121,12 +122,11 @@
           </div>
         </section>
 
-        <!-- reused main button and added centered modifier -->
         <button
           onclick="window.location.href='./pages/menu.html'"
           class="main__button main__button--centered"
         >
-          VIEW ALL
+          <div class="main__button-box">VIEW ALL</div>
         </button>
       </section>
 
@@ -141,15 +141,15 @@
           <div class="info__images">
             <img
               src="./assets/images/planting.svg"
-              alt=""
+              alt="planting"
               class="info__image"
             /><img
               src="./assets/images/coffee-beans.svg"
-              alt=""
+              alt="coffee beans"
               class="info__image"
             /><img
               src="./assets/images/coffee-cup.svg"
-              alt=""
+              alt="coffee cup"
               class="info__image"
             />
           </div>
@@ -157,15 +157,17 @@
             onclick="window.location.href='./index.html'"
             class="main__button"
           >
-            LEARN MORE
+            <div class="main__button-box">LEARN MORE</div>
           </button>
         </div>
         <div class="info__featured">
-          <img
-            src="./assets/images/tiltedcan.png"
-            alt=""
-            class="info__featured-image"
-          />
+          <div class="info__featured-box">
+            <img
+              src="./assets/images/tiltedcan.png"
+              alt="tilted can"
+              class="info__featured-image"
+            />
+          </div>
         </div>
       </section>
 
@@ -180,6 +182,11 @@
 
     <!-- footer -->
     <footer class="footer">
+      <img
+        src="./assets//logos/coffee-beans-logo-and-footer.svg"
+        alt="coffee beans"
+        class="footer__image footer__image--left"
+      />
       <div class="footer__category">
         <h3 class="footer__title">Address</h3>
         <p class="footer__detail">503 Broadway Penthouse</p>
@@ -222,6 +229,11 @@
             class="footer__icon"
         /></a>
       </div>
+      <img
+        src="./assets//logos/coffee-beans-logo-and-footer.svg"
+        alt="coffee beans"
+        class="footer__image footer__image--right"
+      />
     </footer>
   </body>
 </html>

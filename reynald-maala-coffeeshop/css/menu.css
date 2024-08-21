@@ -15,6 +15,15 @@
   align-content: center;
 }
 
+.hero__title-box {
+  box-sizing: border-box;
+  width: 23rem;
+  height: 15rem;
+  background-color: var(--graphite);
+  position: relative;
+  margin: 0 auto;
+}
+
 .hero__title {
   font-weight: 200;
   font-size: 5rem;
@@ -23,8 +32,12 @@
   color: white;
   width: 23rem;
   height: 15rem;
-  background-color: var(--graphite);
-  margin: 0 auto;
+  box-sizing: border-box;
+  margin: 0;
+  position: absolute;
+  border: 5px solid var(--nitro-blue);
+  right: 1rem;
+  bottom: 1rem;
 }
 
 .hero__nav {
