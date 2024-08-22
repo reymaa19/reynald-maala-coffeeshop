@@ -14,10 +14,13 @@ body {
 /* header */
 
 .header {
-  display: flex;
-  justify-content: space-between;
   background-color: var(--nitro-pink);
   color: var(--graphite);
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
   padding: 1.7rem;
 }
 
@@ -58,6 +61,6 @@ body {
   font-weight: 600;
 }
 
-.header__link--highlighted {
+.header__link--primary {
   color: var(--nitro-blue);
 }

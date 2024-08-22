@@ -15,49 +15,47 @@
   <body>
     <!-- header -->
     <header class="header">
-      <a href="./index.html" class="header__logo-link">
-        <img
-          src="./assets/logos/coffee-beans-logo-and-footer.svg"
-          alt="coffee bean logo"
-          class="header__logo"
-        />
-        <h2 class="header__title">nitro</h2></a
-      >
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__item">
-            <a href="./index.html" class="header__link">ABOUT</a>
-          </li>
-          <li class="header__item">
-            <a href="./pages/menu.html" class="header__link">MENU</a>
-          </li>
-          <li class="header__item">
-            <a
-              href="./pages/menu.html"
-              class="header__link header__link--highlighted"
-              >SHOP NOW</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <div class="header__wrapper">
+        <a href="./index.html" class="header__logo-link">
+          <img
+            src="./assets/logos/coffee-beans-logo-and-footer.svg"
+            alt="coffee bean logo"
+            class="header__logo"
+          />
+          <h2 class="header__title">nitro</h2></a
+        >
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="./index.html" class="header__link">ABOUT</a>
+            </li>
+            <li class="header__item">
+              <a href="./pages/menu.html" class="header__link">MENU</a>
+            </li>
+            <li class="header__item">
+              <a
+                href="./pages/menu.html"
+                class="header__link header__link--primary"
+                >SHOP NOW</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-    <!-- main -->
-    <main class="main">
       <!-- hero -->
       <section class="hero">
-        <div class="hero__details-container">
+        <div class="hero__content">
           <h1 class="hero__title">Nitro Coffee</h1>
           <p class="hero__description">
             Coffee is a brewed drink prepared from roasted coffee beans, the
             seeds of berries from certain Coffee species.
           </p>
 
-          <button
-            class="main__button"
-            onclick="window.location.href='./pages/menu.html'"
-          >
-            <div class="main__button-box">SHOP NOW</div>
+          <button class="cta-button">
+            <div class="cta-button__content">
+              <a href="./pages/menu.html" class="cta-button__link">SHOP NOW</a>
+            </div>
           </button>
         </div>
         <img
@@ -66,116 +64,117 @@
           class="hero__image"
         />
       </section>
+    </header>
 
-      <!-- products-section -->
-      <section class="products-section">
-        <h2 class="main__title">Our Products</h2>
+    <!-- main -->
+    <main class="main">
+      <!-- products -->
+      <section class="products">
+        <h2 class="products__title">Our Products</h2>
 
-        <!-- products-gallery -->
-        <section class="products-gallery">
-          <!-- product -->
-          <div class="product">
+        <!-- product-gallery -->
+        <section class="product-gallery">
+          <!-- product-card -->
+          <div class="product-card">
             <img
               src="./assets/images/coffeebeans.png"
               alt="coffee beans"
-              class="product__image"
+              class="product-card__image"
             />
-            <div class="product__details">
-              <div class="product__content">
-                <h3 class="product__title">Coffee Beans</h3>
-                <p class="product__quantity">Pack of 3</p>
+            <div class="product-card__info">
+              <div class="product-card__details">
+                <h3 class="product-card__name">Coffee Beans</h3>
+                <p class="product-card__quantity">Pack of 3</p>
               </div>
-              <p class="product__price">$19</p>
+              <p class="product-card__price">$19</p>
             </div>
           </div>
 
-          <!-- product -->
-          <div class="product">
+          <!-- product-card -->
+          <div class="product-card">
             <img
               src="./assets/images/coldbrew.png"
               alt="cold brew"
-              class="product__image"
+              class="product-card__image"
             />
-            <div class="product__details">
-              <div class="product__content">
-                <h3 class="product__title">Cold Brew</h3>
-                <p class="product__quantity">1 can</p>
+            <div class="product-card__info">
+              <div class="product-card__details">
+                <h3 class="product-card__name">Cold Brew</h3>
+                <p class="product-card__quantity">1 can</p>
               </div>
-              <p class="product__price">$5</p>
+              <p class="product-card__price">$5</p>
             </div>
           </div>
 
-          <!-- product -->
-          <div class="product">
+          <!-- product-card -->
+          <div class="product-card">
             <img
               src="./assets/images/inhousebrew.png"
               alt="in-house brew"
-              class="product__image"
+              class="product-card__image"
             />
-            <div class="product__details">
-              <div class="product__content">
-                <h3 class="product__title">In-house brew</h3>
-                <p class="product__quantity">1 cup</p>
+            <div class="product-card__info">
+              <div class="product-card__details">
+                <h3 class="product-card__name">In-house brew</h3>
+                <p class="product-card__quantity">1 cup</p>
               </div>
-              <p class="product__price">$3</p>
+              <p class="product-card__price">$3</p>
             </div>
           </div>
         </section>
 
-        <button
-          onclick="window.location.href='./pages/menu.html'"
-          class="main__button main__button--centered"
-        >
-          <div class="main__button-box">VIEW ALL</div>
+        <button class="cta-button cta-button--primary">
+          <div class="cta-button__content">
+            <a href="./pages/menu.html" class="cta-button__link">VIEW ALL</a>
+          </div>
         </button>
       </section>
 
-      <!-- info -->
-      <section class="info">
-        <div class="info__details">
-          <h2 class="main__title">We're Different</h2>
-          <p class="info__description">
+      <!-- intro -->
+      <section class="intro">
+        <div class="intro__content">
+          <h2 class="intro__title">We're Different</h2>
+          <p class="intro__description">
             We grow and roast our own beans. Every bean, every cup, every step
             of the way, we strive for excellence.
           </p>
-          <div class="info__images">
+          <div class="intro__icons">
             <img
               src="./assets/images/planting.svg"
               alt="planting"
-              class="info__image"
+              class="intro__icon"
             /><img
               src="./assets/images/coffee-beans.svg"
               alt="coffee beans"
-              class="info__image"
+              class="intro__icon"
             /><img
               src="./assets/images/coffee-cup.svg"
               alt="coffee cup"
-              class="info__image"
+              class="intro__icon"
             />
           </div>
-          <button
-            onclick="window.location.href='./index.html'"
-            class="main__button"
-          >
-            <div class="main__button-box">LEARN MORE</div>
+          <button class="cta-button">
+            <div class="cta-button__content">
+              <a href="./index.html" class="cta-button__link">LEARN MORE</a>
+            </div>
           </button>
         </div>
-        <div class="info__featured">
-          <div class="info__featured-box">
+        <div class="intro__image-container">
+          <div class="intro__image-wrapper">
             <img
               src="./assets/images/tiltedcan.png"
               alt="tilted can"
-              class="info__featured-image"
+              class="intro__image"
             />
           </div>
         </div>
       </section>
 
-      <!-- discount -->
-      <section class="discount">
-        <p class="discount__description">
+      <!-- promo -->
+      <section class="promo">
+        <p class="promo__description">
           Get 20% off your first order with code
-          <span class="discount__code">FirstNitro</span>
+          <span class="promo__code">FirstNitro</span>
         </p>
       </section>
     </main>
@@ -185,30 +184,26 @@
       <img
         src="./assets//logos/coffee-beans-logo-and-footer.svg"
         alt="coffee beans"
-        class="footer__image footer__image--left"
+        class="footer__image footer__image--start"
       />
-      <div class="footer__category">
-        <h3 class="footer__title">Address</h3>
-        <p class="footer__detail">503 Broadway Penthouse</p>
-        <p class="footer__detail">New York</p>
+      <div class="footer__section">
+        <h3 class="footer__category">Address</h3>
+        <address class="footer__info">503 Broadway Penthouse</address>
+        <address class="footer__info">New York</address>
       </div>
-      <div class="footer__category">
-        <h3 class="footer__title">Hours</h3>
-        <p class="footer__detail">
-          <span class="footer__detail footer__detail--bold"
-            >Monday - Friday:</span
-          >
-          9am - 7pm
+      <div class="footer__section">
+        <h3 class="footer__category">Hours</h3>
+        <p class="footer__info">
+          <span class="footer__info--primary">Monday - Friday:</span>
+          <time>9am - 7pm</time>
         </p>
-        <p class="footer__detail">
-          <span class="footer__detail footer__detail--bold"
-            >Saturday - Sunday:</span
-          >
-          10am - 5pm
+        <p class="footer__info">
+          <span class="footer__info--primary">Saturday - Sunday:</span>
+          <time>10am - 5pm</time>
         </p>
       </div>
-      <div class="footer__category">
-        <h3 class="footer__title">Social</h3>
+      <div class="footer__section">
+        <h3 class="footer__category">Social</h3>
         <a href="https://www.facebook.com/" target="_blank" class="footer__link"
           ><img
             src="./assets/images/Facebook-Icon.svg"
@@ -232,7 +227,7 @@
       <img
         src="./assets//logos/coffee-beans-logo-and-footer.svg"
         alt="coffee beans"
-        class="footer__image footer__image--right"
+        class="footer__image footer__image--end"
       />
     </footer>
   </body>
