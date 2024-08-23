@@ -1,0 +1,84 @@
+@use './partials/global';
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+
+// hero
+
+.hero {
+  &__background {
+    @include background-image('../assets/images/coffee-circle.jpg');
+    @include flex-container(row, center, center);
+    height: 70vh;
+  }
+  &__content {
+    width: 23rem;
+    height: 15rem;
+    background-color: $color-text-primary;
+    position: absolute;
+  }
+  &__title {
+    @include positioned-border(6px, $color-primary, 1rem);
+    @include large-text-style($color: white);
+    align-content: center;
+    width: 23rem;
+    height: 15rem;
+  }
+  &__nav {
+    background-color: $color-text-primary;
+    text-align: center;
+  }
+  &__list {
+    margin: 0;
+  }
+  &__item {
+    display: inline-block;
+    border-left: 5px solid $color-primary;
+    padding-left: 1.6rem;
+    margin: 1.5rem 0.7rem;
+  }
+  &__link {
+    @include small-text-style($font-size-md, $color: white);
+    text-decoration: none;
+  }
+}
+
+// menu-section
+
+.menu-section {
+  @include section-padding(4rem);
+  background-color: $color-bg-light;
+  &--secondary {
+    background-color: $color-bg-gray;
+  }
+  &__title {
+    @include large-text-style($margin: 0 0 3rem 0);
+  }
+}
+
+// menu-item
+
+.menu-item {
+  &__title {
+    @include large-text-style(
+      $font-size-xl,
+      $font-weight-medium,
+      $margin: 2rem 0 0 0
+    );
+  }
+  &__description {
+    @include small-text-style(
+      $font-weight: $font-weight-medium,
+      $text-align: center
+    );
+    @include center-block;
+    font-style: italic;
+    width: 33%;
+  }
+  &__price {
+    @include small-text-style(
+      $font-weight: $font-weight-semibold,
+      $color: $color-primary,
+      $text-align: center
+    );
+  }
+}

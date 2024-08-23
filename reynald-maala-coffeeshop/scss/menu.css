@@ -1,0 +1,157 @@
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0;
+}
+
+.header {
+  background-color: #fff0ed;
+  color: #393939;
+}
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 1.7rem;
+}
+.header__logo-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  text-decoration: none;
+  color: #393939;
+}
+.header__logo {
+  width: 4.2rem;
+}
+.header__title {
+  font-size: 4.2rem;
+  font-weight: 300;
+  color: #393939;
+  text-align: center;
+  margin: 0;
+}
+.header__nav {
+  width: 25%;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  list-style-type: none;
+  padding: 2.23rem 0 0 0;
+  margin: 0;
+}
+.header__link {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #393939;
+  text-align: left;
+  margin: 0;
+  text-decoration: none;
+}
+.header__link--primary {
+  color: #5bacc3;
+}
+
+.hero__background {
+  background-image: url("../assets/images/coffee-circle.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.hero__content {
+  width: 23rem;
+  height: 15rem;
+  background-color: #393939;
+  position: absolute;
+}
+.hero__title {
+  box-sizing: border-box;
+  position: relative;
+  border: 6px solid #5bacc3;
+  right: 1rem;
+  bottom: 1rem;
+  font-size: 5rem;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  margin: 0;
+  align-content: center;
+  width: 23rem;
+  height: 15rem;
+}
+.hero__nav {
+  background-color: #393939;
+  text-align: center;
+}
+.hero__list {
+  margin: 0;
+}
+.hero__item {
+  display: inline-block;
+  border-left: 5px solid #5bacc3;
+  padding-left: 1.6rem;
+  margin: 1.5rem 0.7rem;
+}
+.hero__link {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: white;
+  text-align: left;
+  margin: 0;
+  text-decoration: none;
+}
+
+.menu-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #fff0ed;
+}
+.menu-section--secondary {
+  background-color: #f7f7f7;
+}
+.menu-section__title {
+  font-size: 5rem;
+  font-weight: 300;
+  color: #393939;
+  text-align: center;
+  margin: 0 0 3rem 0;
+}
+
+.menu-item__title {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: #393939;
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+.menu-item__description {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #393939;
+  text-align: center;
+  margin: 0;
+  display: block;
+  margin: 0 auto;
+  font-style: italic;
+  width: 33%;
+}
+.menu-item__price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5bacc3;
+  text-align: center;
+  margin: 0;
+}

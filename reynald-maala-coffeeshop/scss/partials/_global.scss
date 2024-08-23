@@ -1,0 +1,50 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+// body
+
+body {
+  font-family: 'Open Sans';
+  font-weight: $font-weight-normal;
+  margin: 0;
+}
+
+// header
+
+.header {
+  background-color: $color-bg-light;
+  color: $color-text-primary;
+  &__wrapper {
+    @include flex-container($justify-content: space-between);
+    padding: 1.7rem;
+  }
+  &__logo-link {
+    @include flex-container;
+    text-decoration: none;
+    color: $color-text-primary;
+  }
+  &__logo {
+    width: 4.2rem;
+  }
+  &__title {
+    @include large-text-style(4.2rem);
+  }
+  &__nav {
+    width: 25%;
+  }
+  &__list {
+    @include flex-container($justify-content: space-between);
+    flex-wrap: nowrap;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 2.23rem 0 0 0;
+    margin: 0;
+  }
+  &__link {
+    @include small-text-style(1.7rem, 600);
+    text-decoration: none;
+  }
+  &__link--primary {
+    color: $color-primary;
+  }
+}

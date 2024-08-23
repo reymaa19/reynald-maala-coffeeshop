@@ -1,0 +1,337 @@
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0;
+}
+
+.header {
+  background-color: #fff0ed;
+  color: #393939;
+}
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 1.7rem;
+}
+.header__logo-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  text-decoration: none;
+  color: #393939;
+}
+.header__logo {
+  width: 4.2rem;
+}
+.header__title {
+  font-size: 4.2rem;
+  font-weight: 300;
+  color: #393939;
+  text-align: center;
+  margin: 0;
+}
+.header__nav {
+  width: 25%;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  list-style-type: none;
+  padding: 2.23rem 0 0 0;
+  margin: 0;
+}
+.header__link {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #393939;
+  text-align: left;
+  margin: 0;
+  text-decoration: none;
+}
+.header__link--primary {
+  color: #5bacc3;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #fff0ed;
+  padding-bottom: 5rem;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: baseline;
+  height: 45vh;
+  width: 55vw;
+  padding-top: 10rem;
+}
+.hero__title {
+  font-size: 5rem;
+  font-weight: 300;
+  color: #393939;
+  text-align: center;
+  margin: 0;
+}
+.hero__description {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #393939;
+  text-align: left;
+  margin: 0;
+  width: 50%;
+}
+.hero__image {
+  padding-top: 3.5rem;
+  height: 65vh;
+}
+
+.cta-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  font-size: 1.8rem;
+  background-color: #5bacc3;
+}
+.cta-button__content {
+  box-sizing: border-box;
+  position: relative;
+  border: 3px solid #393939;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  padding: 1.25rem 3rem;
+}
+.cta-button__link {
+  text-decoration: none;
+  color: white;
+}
+.cta-button--primary {
+  display: block;
+  margin: 0 auto;
+}
+
+.products {
+  padding-top: 4.15rem;
+  padding-bottom: 4.15rem;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #f7f7f7;
+}
+.products__title {
+  font-size: 5rem;
+  font-weight: 300;
+  color: #393939;
+  text-align: center;
+  margin: 0;
+}
+
+.product-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 0;
+  padding-right: 0;
+  gap: 7rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 25rem;
+  height: 35rem;
+  border-radius: 0.625rem;
+  background-color: white;
+  box-shadow: 0 0.313rem 0.563rem -0.063rem rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.product-card__image {
+  align-self: center;
+  margin: 2rem;
+  height: 19rem;
+}
+.product-card__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: #fff0ed;
+}
+.product-card__title {
+  font-size: 2.3rem;
+  font-weight: 400;
+  color: #393939;
+  text-align: center;
+  margin: 0;
+}
+.product-card__quantity {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #909090;
+  text-align: left;
+  margin: 0;
+}
+.product-card__price {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #5bacc3;
+  text-align: center;
+  margin: 0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 10vw;
+  gap: 20.83vw;
+}
+.intro__title {
+  font-size: 5rem;
+  font-weight: 300;
+  color: #393939;
+  text-align: center;
+  margin: 0;
+}
+.intro__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 38rem;
+  gap: 2rem;
+}
+.intro__description {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #393939;
+  text-align: left;
+  margin: 0;
+}
+.intro__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+.intro__icon {
+  width: 4rem;
+}
+.intro__image-container {
+  background-image: url("../assets/images/coldbrewbackground.png");
+  background-size: cover;
+  background-position: center;
+  height: 26vw;
+  width: 26vw;
+  position: relative;
+}
+.intro__image-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  border: 7px solid #5bacc3;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  width: 100%;
+  height: 100%;
+}
+.intro__image {
+  width: 10vw;
+}
+
+.promo {
+  padding-top: 16.1rem;
+  padding-bottom: 16.1rem;
+  padding-left: 0;
+  padding-right: 0;
+  display: block;
+  margin: 0 auto;
+  width: 80vw;
+}
+.promo__description {
+  font-size: 3.7rem;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  margin: 0;
+  background-color: #393939;
+  padding: 2.6rem;
+}
+.promo__code {
+  font-weight: 800;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #fff0ed;
+  gap: 7vw;
+  position: relative;
+  overflow: hidden;
+}
+.footer__image {
+  position: absolute;
+  width: 10rem;
+  opacity: 25%;
+}
+.footer__image--start {
+  left: -3.5em;
+  top: 2rem;
+}
+.footer__image--end {
+  right: -4rem;
+  bottom: 2rem;
+}
+.footer__category {
+  font-size: 2.3rem;
+  font-weight: 300;
+  color: #393939;
+  text-align: left;
+  margin: 0 0 1rem 0;
+}
+.footer__info {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #393939;
+  text-align: left;
+  margin: 0;
+  font-style: normal;
+}
+.footer__info--primary {
+  font-weight: 800;
+}
+.footer__icon {
+  width: 4rem;
+}

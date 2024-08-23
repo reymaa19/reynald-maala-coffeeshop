@@ -1,0 +1,74 @@
+@use './variables' as *;
+
+@mixin button-reset {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+@mixin background-image($url) {
+  background-image: url($url);
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin section-padding($vertical-padding) {
+  padding-top: $vertical-padding;
+  padding-bottom: $vertical-padding;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@mixin positioned-border($border-width, $border-color, $offset) {
+  box-sizing: border-box;
+  position: relative;
+  border: $border-width solid $border-color;
+  right: $offset;
+  bottom: $offset;
+}
+
+@mixin flex-container(
+  $flex-direction: row,
+  $justify-content: flex-start,
+  $align-items: stretch
+) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin center-block() {
+  display: block;
+  margin: 0 auto;
+}
+
+@mixin large-text-style(
+  $font-size: $font-size-3xl,
+  $font-weight: $font-weight-light,
+  $color: $color-text-primary,
+  $text-align: center,
+  $margin: 0
+) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $color;
+  text-align: $text-align;
+  margin: $margin;
+}
+
+@mixin small-text-style(
+  $font-size: $font-size-sm,
+  $font-weight: $font-weight-normal,
+  $color: $color-text-primary,
+  $text-align: left,
+  $margin: 0
+) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $color;
+  text-align: $text-align;
+  margin: $margin;
+}
