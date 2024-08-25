@@ -33,27 +33,27 @@ body {
   text-align: center;
   margin: 0;
 }
-.header__nav {
-  width: 25%;
+.header__ nav {
+  width: 35%;
 }
 .header__list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  flex-wrap: nowrap;
-  gap: 1rem;
+  gap: 4rem;
   list-style-type: none;
-  padding: 2.23rem 0 0 0;
+  padding: 2.5rem 0 0 0;
   margin: 0;
 }
 .header__link {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: #393939;
   text-align: left;
   margin: 0;
   text-decoration: none;
+  vertical-align: center;
 }
 .header__link--primary {
   color: #5bacc3;
@@ -70,8 +70,9 @@ body {
 .hero__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: baseline;
+  gap: 2rem;
   height: 45vh;
   width: 55vw;
   padding-top: 10rem;
@@ -102,20 +103,27 @@ body {
   padding: 0;
   font: inherit;
   cursor: pointer;
-  font-size: 1.8rem;
+  box-sizing: border-box;
+  position: relative;
+  border: 0 solid transparent;
+  right: -0.5rem;
+  bottom: -0.5rem;
   background-color: #5bacc3;
+  font-size: 1.8rem;
 }
-.cta-button__content {
+.cta-button__link {
   box-sizing: border-box;
   position: relative;
   border: 3px solid #393939;
   right: 0.5rem;
   bottom: 0.5rem;
-  padding: 1.25rem 3rem;
-}
-.cta-button__link {
+  display: block;
   text-decoration: none;
-  color: white;
+  padding: 1.25rem 2.6rem;
+  color: #fff;
+}
+.cta-button__link:active {
+  animation: button-move 0.5s;
 }
 .cta-button--primary {
   display: block;
@@ -123,8 +131,8 @@ body {
 }
 
 .products {
-  padding-top: 4.15rem;
-  padding-bottom: 4.15rem;
+  padding-top: 5.15rem;
+  padding-bottom: 5.15rem;
   padding-left: 0;
   padding-right: 0;
   background-color: #f7f7f7;
@@ -154,11 +162,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
+  box-shadow: 0 0.313rem 0.563rem -0.063rem rgba(0, 0, 0, 0.25);
   width: 25rem;
   height: 35rem;
   border-radius: 0.625rem;
-  background-color: white;
-  box-shadow: 0 0.313rem 0.563rem -0.063rem rgba(0, 0, 0, 0.25);
+  background-color: #fff;
   overflow: hidden;
 }
 .product-card__image {
@@ -182,8 +190,8 @@ body {
   margin: 0;
 }
 .product-card__quantity {
-  font-size: 1.3rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 500;
   color: #909090;
   text-align: left;
   margin: 0;
@@ -200,12 +208,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  padding-left: 0;
-  padding-right: 0;
-  margin: 0 10vw;
+  align-items: stretch;
+  margin: 12rem 10vw -2rem 10vw;
   gap: 20.83vw;
 }
 .intro__title {
@@ -264,10 +268,13 @@ body {
 .intro__image {
   width: 10vw;
 }
+.intro__image:hover {
+  animation: image-rotate 2s linear infinite;
+}
 
 .promo {
-  padding-top: 16.1rem;
-  padding-bottom: 16.1rem;
+  padding-top: 16rem;
+  padding-bottom: 16rem;
   padding-left: 0;
   padding-right: 0;
   display: block;
@@ -277,11 +284,12 @@ body {
 .promo__description {
   font-size: 3.7rem;
   font-weight: 400;
-  color: white;
+  color: #fff;
   text-align: center;
   margin: 0;
+  animation: color-fade 2.5s infinite alternate linear;
   background-color: #393939;
-  padding: 2.6rem;
+  padding: 3rem;
 }
 .promo__code {
   font-weight: 800;
@@ -315,7 +323,7 @@ body {
   bottom: 2rem;
 }
 .footer__category {
-  font-size: 2.3rem;
+  font-size: 2.8rem;
   font-weight: 300;
   color: #393939;
   text-align: left;
@@ -334,4 +342,31 @@ body {
 }
 .footer__icon {
   width: 4rem;
+}
+
+@keyframes button-move {
+  from {
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+  to {
+    top: 0rem;
+    left: 0rem;
+  }
+}
+@keyframes color-fade {
+  from {
+    background-color: #393939;
+  }
+  to {
+    background-color: #5bacc3;
+  }
+}
+@keyframes image-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

@@ -2,69 +2,73 @@
 @use './partials/variables' as *;
 @use './partials/mixins' as *;
 
-// hero
-
 .hero {
   &__background {
     @include background-image('../assets/images/coffee-circle.jpg');
     @include flex-container(row, center, center);
     height: 70vh;
   }
+
   &__content {
-    width: 23rem;
-    height: 15rem;
-    background-color: $color-text-primary;
+    width: 25rem;
+    height: 17rem;
+    background-color: $color-text-dark;
     position: absolute;
   }
+
   &__title {
-    @include positioned-border(6px, $color-primary, 1rem);
-    @include large-text-style($color: white);
+    @include positioned-border(6px, $color-primary, 1.25rem);
+    @include large-text-style($color: $color-text-light);
     align-content: center;
-    width: 23rem;
-    height: 15rem;
+    width: 25rem;
+    height: 17rem;
   }
+
   &__nav {
-    background-color: $color-text-primary;
+    background-color: $color-text-dark;
     text-align: center;
   }
+
   &__list {
     margin: 0;
+    padding: 0;
   }
+
   &__item {
     display: inline-block;
     border-left: 5px solid $color-primary;
     padding-left: 1.6rem;
     margin: 1.5rem 0.7rem;
   }
+
   &__link {
-    @include small-text-style($font-size-md, $color: white);
+    @include small-text-style($font-size-md, $color: $color-text-light);
     text-decoration: none;
   }
 }
 
-// menu-section
-
 .menu-section {
-  @include section-padding(4rem);
+  @include section-padding(2.5rem);
   background-color: $color-bg-light;
+
   &--secondary {
     background-color: $color-bg-gray;
   }
+
   &__title {
     @include large-text-style($margin: 0 0 3rem 0);
   }
 }
 
-// menu-item
-
 .menu-item {
   &__title {
     @include large-text-style(
       $font-size-xl,
-      $font-weight-medium,
+      $font-weight-normal,
       $margin: 2rem 0 0 0
     );
   }
+
   &__description {
     @include small-text-style(
       $font-weight: $font-weight-medium,
@@ -74,6 +78,7 @@
     font-style: italic;
     width: 33%;
   }
+
   &__price {
     @include small-text-style(
       $font-weight: $font-weight-semibold,

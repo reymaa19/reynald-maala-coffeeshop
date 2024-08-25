@@ -2,60 +2,67 @@
 @use './partials/variables' as *;
 @use './partials/mixins' as *;
 
-// hero
-
 .hero {
   @include flex-container(row, center);
   background-color: $color-bg-light;
   padding-bottom: 5rem;
+
   &__content {
-    @include flex-container(column, space-evenly, baseline);
+    @include flex-container(column, center, baseline);
+    gap: 2rem;
+
     height: 45vh;
     width: 55vw;
     padding-top: 10rem;
   }
+
   &__title {
     @include large-text-style;
   }
+
   &__description {
     @include small-text-style;
+
     width: 50%;
   }
+
   &__image {
     padding-top: 3.5rem;
     height: 65vh;
   }
 }
-// cta-button
 
 .cta-button {
   @include button-reset;
-  font-size: $font-size-md;
+  @include positioned-border(0, transparent, -0.5rem);
   background-color: $color-primary;
-  &__content {
-    @include positioned-border(3px, $color-text-primary, 0.5rem);
-    padding: 1.25rem 3rem;
-  }
+  font-size: $font-size-md;
+
   &__link {
+    @include positioned-border(3px, $color-text-dark, 0.5rem);
+    display: block;
     text-decoration: none;
-    color: white;
+    padding: 1.25rem 2.6rem;
+    color: $color-text-light;
+
+    &:active {
+      animation: button-move 0.5s;
+    }
   }
+
   &--primary {
     @include center-block;
   }
 }
 
-// products
-
 .products {
-  @include section-padding(4.15rem);
+  @include section-padding(5.15rem);
   background-color: $color-bg-gray;
+
   &__title {
     @include large-text-style;
   }
 }
-
-// product-gallery
 
 .product-gallery {
   @include flex-container(row, center);
@@ -63,100 +70,115 @@
   gap: 7rem;
 }
 
-// product-card
-
 .product-card {
   @include flex-container(column, space-between);
+  @include card-shadow;
   width: 25rem;
   height: 35rem;
   border-radius: 0.625rem;
-  background-color: white;
-  box-shadow: 0 0.313rem 0.563rem -0.063rem rgba(0, 0, 0, 0.25);
+  background-color: $color-text-light;
   overflow: hidden;
+
   &__image {
     align-self: center;
     margin: 2rem;
     height: 19rem;
   }
+
   &__info {
     @include flex-container(row, space-between, center);
     padding: 3rem 2rem;
     background-color: $color-bg-light;
   }
+
   &__title {
     @include large-text-style($font-size-lg, $font-weight-normal);
   }
+
   &__quantity {
     @include small-text-style(
-      1.3rem,
-      $font-weight-normal,
-      $color-text-secondary
+      $font-size-sm,
+      $font-weight-medium,
+      $color-text-gray
     );
   }
+
   &__price {
     @include large-text-style($font-size-lg, $font-weight-bold, $color-primary);
   }
 }
 
-// intro
-
 .intro {
-  @include flex-container(row, center, center);
-  @include section-padding(10rem);
-  margin: 0 10vw;
+  @include flex-container(row, center);
+  margin: 12rem 10vw -2rem 10vw;
   gap: 20.83vw;
+
   &__title {
     @include large-text-style;
   }
+
   &__content {
-    @include flex-container(column, flex-start, flex-start);
+    @include flex-container(column, $align-items: flex-start);
     width: 38rem;
     gap: 2rem;
   }
+
   &__description {
     @include small-text-style;
   }
+
   &__icons {
     @include flex-container(row, space-between);
     width: 100%;
   }
+
   &__icon {
     width: 4rem;
   }
+
   &__image-container {
     @include background-image('../assets/images/coldbrewbackground.png');
     height: 26vw;
     width: 26vw;
     position: relative;
   }
+
   &__image-wrapper {
     @include flex-container(row, center, center);
     @include positioned-border(7px, $color-primary, 1.2rem);
     width: 100%;
     height: 100%;
   }
+
   &__image {
     width: 10vw;
+
+    &:hover {
+      animation: image-rotate 2s linear infinite;
+    }
   }
 }
 
-// promo
-
 .promo {
-  @include section-padding(16.1rem);
+  @include section-padding(16rem);
   @include center-block;
   width: 80vw;
+
   &__description {
-    @include large-text-style($font-size-2xl, $font-weight-normal, white);
-    background-color: $color-text-primary;
-    padding: 2.6rem;
+    @include large-text-style(
+      $font-size-2xl,
+      $font-weight-normal,
+      $color-text-light
+    );
+    animation: color-fade 2.5s infinite alternate linear;
+    background-color: $color-text-dark;
+    padding: 3rem;
   }
+
   &__code {
     font-weight: $font-weight-bold;
   }
 }
-
-// footer
 
 .footer {
   @include flex-container(row, space-evenly);
@@ -165,34 +187,70 @@
   gap: 7vw;
   position: relative;
   overflow: hidden;
+
   &__image {
     position: absolute;
     width: 10rem;
     opacity: 25%;
   }
+
   &__image--start {
     left: -3.5em;
     top: 2rem;
   }
+
   &__image--end {
     right: -4rem;
     bottom: 2rem;
   }
+
   &__category {
     @include large-text-style(
-      $font-size-lg,
+      $font-size-xl,
       $text-align: left,
       $margin: 0 0 1rem 0
     );
   }
+
   &__info {
     @include small-text-style;
     font-style: normal;
   }
+
   &__info--primary {
     font-weight: $font-weight-bold;
   }
+
   &__icon {
     width: 4rem;
+  }
+}
+
+@keyframes button-move {
+  from {
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+  to {
+    top: 0rem;
+    left: 0rem;
+  }
+}
+
+@keyframes color-fade {
+  from {
+    background-color: $color-text-dark;
+  }
+  to {
+    background-color: $color-primary;
+  }
+}
+
+@keyframes image-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
